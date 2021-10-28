@@ -1,0 +1,74 @@
+$secondry_color: #6688d7;
+$try_color: #e4aa48;
+$primary_color: #2e2e35;
+$box_color: #36363e;
+$ternary_color: #ffffff;
+$tri_color: #dadada;
+
+$primary_Font: "Poppins", sans-serif;
+$secondry_Font: "Open Sans", sans-serif;
+@mixin startFlex() {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+@mixin centerFlex() {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@mixin spaceBtwFlex() {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@mixin spaceArndFlex() {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+@mixin spaceEvnFlex() {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+@mixin gridSystem($grid) {
+  display: grid;
+  grid-template-columns: repeat($grid, 1fr);
+  gap: 30px;
+  width: 100%;
+}
+@mixin topBottomAnimate {
+  animation: jawad 2s linear;
+}
+@keyframes jawad {
+  0% {
+    transform: translateY(-40px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  75% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+@mixin bottomBorderAnimated($color) {
+  cursor: pointer;
+  position: relative;
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background-color: $color;
+    transition: all 0.3s ease-in-out;
+  }
+  &:hover:after {
+    width: 100%;
+  }
+}

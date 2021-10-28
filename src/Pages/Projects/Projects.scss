@@ -1,0 +1,32 @@
+@import "../../Colors.scss";
+.projectsGrid {
+  @include gridSystem(3);
+  height: 80vh;
+  width: 100%;
+  margin: 0 auto;
+  overflow-y: auto;
+  place-items: center;
+  overflow-x: hidden;
+}
+.projectHead {
+  width: 100%;
+  text-align: center;
+  font-family: $primary_Font !important;
+  letter-spacing: 3px;
+  color: $secondry_color;
+}
+@media only screen and (max-width: 1225px) {
+  .projectsGrid {
+    @include gridSystem(2);
+  }
+}
+@media only screen and (max-width: 880px) {
+  .projectsGrid {
+    @include gridSystem(2);
+  }
+}
+@media only screen and (max-width: 580px) {
+  .projectsGrid {
+    @include gridSystem(1);
+  }
+}

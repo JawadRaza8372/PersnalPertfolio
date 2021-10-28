@@ -1,0 +1,56 @@
+@import "../../Colors.scss";
+.idProject {
+  width: 95%;
+  margin: 0 auto;
+  height: 85vh;
+  .projectGrid {
+    @include gridSystem(2);
+    height: 100%;
+    width: 100%;
+    overflow-y: auto;
+    place-items: center;
+    overflow-x: hidden;
+    img {
+      width: 100%;
+      max-height: 400px;
+      border-radius: 20px;
+      min-height: 250px;
+    }
+    .secondDiv {
+      @include startFlex;
+      width: 80%;
+      flex-direction: column;
+      margin: 0 auto;
+      h1 {
+        margin-bottom: 15px;
+        letter-spacing: 3px;
+        font-size: 20px;
+        width: 100%;
+        text-align: left;
+        color: $secondry_color;
+      }
+      p {
+        width: 100%;
+        font-size: 16px;
+        text-align: left;
+        letter-spacing: 2px;
+      }
+      a {
+        color: $secondry_color;
+        letter-spacing: 3px;
+        text-decoration: none !important;
+        font-family: $primary_Font;
+        font-weight: bold;
+        margin: 30px 20px !important;
+        @include bottomBorderAnimated($secondry_color);
+      }
+    }
+  }
+}
+@media only screen and (max-width: 900px) {
+  .idProject {
+    .projectGrid {
+      @include gridSystem(1);
+    }
+  }
+}

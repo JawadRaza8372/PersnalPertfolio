@@ -1,0 +1,55 @@
+@import "../../Colors.scss";
+.sectionLogin {
+  @include centerFlex;
+  width: 100%;
+  height: 84vh;
+  max-height: fit-content;
+  background-color: $secondry_color;
+  clip-path: polygon(0 0, 30% 12%, 100% 0, 100% 100%, 70% 88%, 0 100%);
+  overflow: hidden;
+  form {
+    @include centerFlex;
+    flex-direction: column;
+    height: 40%;
+    padding: 0px 10px;
+    h1 {
+      letter-spacing: 3px;
+      color: $ternary_color;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+      margin-top: 15px;
+    }
+    input {
+      background-color: $box_color;
+      height: 35px;
+      padding: 5px 10px;
+      font-size: 16px;
+      max-width: 500px;
+      min-width: 95%;
+      border-radius: 15px;
+      outline: none;
+      border: 2px solid $secondry_color;
+      color: $secondry_color;
+      font-family: $primary_Font !important;
+      margin-bottom: 20px;
+    }
+    button {
+      font-family: $primary_Font;
+      font-weight: bold;
+      letter-spacing: 3px;
+      border-radius: 5px;
+      transition: all 0.3s ease-in-out;
+      text-transform: capitalize;
+      padding: 10px 15px;
+      background-color: transparent;
+      color: $primary_color;
+      border: 2px solid $primary_color;
+      &:hover {
+        background-color: $primary_color;
+        font-weight: bolder;
+        color: $secondry_color;
+      }
+    }
+  }
+}

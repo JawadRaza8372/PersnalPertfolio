@@ -1,0 +1,29 @@
+@import "../../Colors.scss";
+.errorPage {
+  height: 85vh;
+  width: 100%;
+  @include centerFlex;
+  flex-direction: column;
+  .headinError {
+    color: $secondry_color;
+    letter-spacing: 3px;
+    font-size: 50px !important;
+    margin-bottom: 20px;
+  }
+  p {
+    color: $ternary_color;
+    letter-spacing: 3px;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .homeLink {
+    text-decoration: none !important;
+    color: $secondry_color;
+    font-size: 20px;
+    margin: 20px 0px;
+    font-family: $primary_Font !important;
+    @include bottomBorderAnimated($secondry_color);
+    @include topBottomAnimate;
+  }
+}

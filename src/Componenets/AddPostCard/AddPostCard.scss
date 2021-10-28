@@ -1,0 +1,19 @@
+@import "../../Colors.scss";
+.addcard {
+  @include centerFlex;
+  flex-direction: column;
+  background-color: $primary_color;
+  height: 300px;
+  width: 250px;
+  border-radius: 20px;
+  cursor: pointer;
+  color: $secondry_color;
+  font-family: $primary_Font;
+  border: 2px solid $secondry_color;
+  .span {
+    font-size: 50px;
+  }
+  p {
+    font-size: 20px;
+  }
+}

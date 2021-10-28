@@ -1,0 +1,70 @@
+@import "Colors";
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: $primary_color;
+  color: $ternary_color;
+  font-family: $primary_Font;
+}
+input {
+  @include topBottomAnimate;
+}
+textarea {
+  @include topBottomAnimate;
+}
+button {
+  font-family: $primary_Font;
+  @include topBottomAnimate;
+}
+ul {
+  @include topBottomAnimate;
+
+  li {
+    font-family: $primary_Font;
+  }
+}
+h1 {
+  @include topBottomAnimate;
+  font-family: $primary_Font;
+}
+h3 {
+  @include topBottomAnimate;
+  font-family: $primary_Font;
+}
+p {
+  font-family: $primary_Font;
+  @include topBottomAnimate;
+}
+span {
+  font-family: $primary_Font;
+  @include topBottomAnimate;
+}
+.container {
+  margin: 0 auto;
+  width: 90%;
+  // overflow: hidden;
+}
+@media only screen and (max-width: 920px) {
+  .container {
+    margin: 0 auto;
+    width: 95%;
+  }
+}
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $secondry_color;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: $secondry_color;
+}
