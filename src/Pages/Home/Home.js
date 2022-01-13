@@ -62,13 +62,12 @@ function Home() {
             <h1>
               UI/UX developer, MERN
               <br />
-              Stack Web Developer
+              Stack Developer
             </h1>
             <p>
-              Hi there, I'm Muhammmad Jawad Raza.👋 I'm a React Js Developer!!.
-              🌱 I’m currently learning everything 🤣. ⚡ React is Not a
-              Framework, But a JavaScript Library. ⚡ Fun fact: I love Traveling
-              But not travelled too much.
+              👋 Hi there, I'm Muhammmad Jawad Raza. I’m React / React-Native
+              Developer!!.I’m currently learning everything. ⚡ Fun fact: React
+              is Not a Framework, But a JavaScript Library.
             </p>
             <span onClick={() => location.push("/aboutme")}>
               Learn More <ArrowForwardIcon />

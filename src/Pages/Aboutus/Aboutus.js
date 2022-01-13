@@ -10,12 +10,11 @@ function Aboutus() {
           <h1>Frontend Devloper</h1>
           <ul>
             <li>html</li>
-            <li>CSS3</li>
             <li>SCSS</li>
             <li>Bootstrap</li>
             <li>React-Bootstrap</li>
             <li>Material UI</li>
-            <li>React JS</li>
+            <li>React / React-Native</li>
             <li>Redux</li>
           </ul>
         </div>
@@ -23,8 +22,8 @@ function Aboutus() {
           <h1>Backend Devloper</h1>
           <ul>
             <li>Firebase</li>
-            <li>Node Js</li>
-            <li>Express JS</li>
+            <li>Node.Js</li>
+            <li>Express.JS</li>
             <li>Mongodb</li>
           </ul>
         </div>

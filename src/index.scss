@@ -37,11 +37,9 @@ h3 {
 }
 p {
   font-family: $primary_Font;
-  @include topBottomAnimate;
 }
 span {
   font-family: $primary_Font;
-  @include topBottomAnimate;
 }
 .container {
   margin: 0 auto;

@@ -6,7 +6,7 @@ function ErrorPage() {
     <div className="errorPage">
       <h1 className="headinError">404</h1>
       <p>
-        The Item you are looking for is not available.
+        The requested url is not available.
         <br />
         Please go back to Homepage.
       </p>
